@@ -18,18 +18,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
     </script>
-
     <!-- Remove this script once you setup your custom portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
+    <div id="top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding:10px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#about">About Me</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
@@ -37,7 +50,7 @@
         <h1 class="hero-title" class="load-hidden">
           Hi, my name is <span class="text-color-main">Damir</span>
           <br />
-          I'm the Web Developer.
+          I'm the Full Stack Web Developer.
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -56,7 +69,7 @@
               <img
                 class="img-fluid rounded shadow-lg"
                 height="auto"
-                width="300px"
+                width="500px"
                 src="./assets/profile.jpg"
                 alt="Profile Image"
               />
@@ -65,10 +78,23 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Hello everyone, my name is Damir, and I have been working as a Web Developer for 5 years. A little bit about myself, I was born and raised in Tajikistan, if you never heard of that country, it is post-Soviet Union country located in Central Asia in the neighborhood with China, Kyrgyzstan, Afghanistan and Uzbekistan.  
+                Hello everyone! My name is Damir, and I have been working as a Web Developer for almost 4 years. 
+                To tell you a little bit about myself, I was born and raised in Tajikistan, if you never heard of that country, 
+                it is a post-Soviet Union country located in Central Asia in neighborhood with China, Kyrgyzstan, Afghanistan, and Uzbekistan. 
               </p>
               <p class="about-wrapper__info-text">
-                After my graduation from high school, I traveled to North Cyprus to pursue my Bachelor’s degree in Computer Engineering. From there on, when I obtained my Bachelor’s Degree, I came back home and worked in one of the banks as a Software Developer for 1 year. I came to Canada in 2017 and went to Seneca College to study Computer Programming.
+                As I remember myself, I have always had a passion for coding, especially, creating web applications. 
+                This is why I have decided to pursue my Bachelor's degree in Computer Engineering in North Cyprus. 
+                My program consisted of both Hardware and Software sides of the computers, which helped me to understand the fundamentals of the design and development of systems based on computers and complex digital logic devices. 
+                While I was pursuing my Bachelor's degree, I decided to go with the software side of the computer and focus on Web Development. From there on, my adventure starts.
+              </p>
+              <p class="about-wrapper__info-text">
+                When I obtained my Bachelor’s Degree, I came back home and worked in one of the companies as a Software Developer for a year. 
+                At that time, I decided to come to Canada and build my career as a Full Stack Developer as there were more opportunities in Canada as opposed to my country. 
+                I came to Canada in 2017 and studied Computer Programming in Seneca College. 
+                Thanks to my college, I was able to sharpen my skills in Web Development and find a job as a Developer 2 weeks after my graduation ceremony. 
+                While I was studying, I worked on several different personal side projects to improve myself and build a portfolio. 
+                Even now, I keep on learning new aspects of my field to be up to date with the latest technologies. This is how I improve and prosper as a specialist. 
               </p>
               <span class="d-flex mt-3">
                 <a target="_blank" class="cta-btn cta-btn--resume" href="">
@@ -92,14 +118,48 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Smart Brain Web Application</h3>
+                <div>
+                  <p class="mb-4">
+                    I have created a complex image recognition app using HTML5, CSS3, Bootstrap 5, JavaScript, React + React Hooks, Node.js, Express.js, NPM, RESTful API Design, SQL and PostgreSQL. 
+                    The application allows users to register, sign in and upload any image and detect face if exists. 
+                    The application uses AI Clarifai API to detect a face on the uploaded image. 
+                    In addition, users can update their information on the profile page. 
+                    Furthermore, there is an administrator who has complete control of the application. 
+                    The administrator, can monitor the activities of every user, delete, create and update information about any user in the system.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://damirbey.github.io/Smart-Brain-Application/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Damirbey/Smart-Brain-Application">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://damirbey.github.io/Smart-Brain-Application/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/smartBrain.JPG" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">My To-Do List</h3>
                 <div>
                   <p class="mb-4">
-                    Using React, Node.js, Express.js and MongoDB, I created my to-do list web application 
-                    where the user is able to list tasks and delete 
-                    completed ones for the day. Moreover,the user has an option 
-                    to have multiple custom lists by appending the URL with
-                    the appropriate list title. For example,  https://stark-escarpment-07101.herokuapp.com/<strong>CustomListTitle</strong>
+                    Using HTML5, CSS3, JavaScript, React, Node.js, Express.js, and MongoDB, I created my to-do list web application where 
+                    user can list tasks and delete completed ones. 
+                    Moreover, users can have multiple custom lists by appending the URL with the appropriate list title. 
+                    For example,  https://stark-escarpment-07101.herokuapp.com/<strong>CustomListTitle</strong>
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://stark-escarpment-07101.herokuapp.com/">
@@ -126,15 +186,48 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Expense Tracker</h3>
+                <div>
+                  <p class="mb-4">
+                    Using HTML5, CSS3, JavaScript, React + React Hooks, Node.js, Express.js, and MongoDB, 
+                    I created expense tracker web application where user can add expenses which have name and cost, 
+                    remove expenses, view remaining budget, view how much they've spent, edit budget and search expenses. 
+                    The application helps to have control over every expense and maintain healthy financial status.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://damirbey.github.io/Expense-Tracker/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Damirbey/Expense-Tracker">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://damirbey.github.io/Expense-Tracker/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/expenseTracker.JPG" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Employee Tracker</h3>
                 <div>
                   <p class="mb-4">
-                    Created the employee tracker application using Angular, RESTFUL API, and MongoDB. 
-                    With the help of this application, every employee of the company will be able to search 
+                    Created employee tracker application using Angular, JavaScript, RESTFUL API, and MongoDB. 
+                    With the help of this application, every employee of the company can search 
                     for any employee within the organization, retrieve the data from the database and update 
-                    the outdated information for that person. Also, employees will be able to create new 
+                    the outdated information for that person. Also, employees can create new 
                     positions and assign that newly created position to any employee. 
-                    This web app helps to keep the track of employees within any company and makes sure that information is up to date for each employee.
+                    This web app helps to keep the track of employees within any company and makes sure that information stays up to date for each employee.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://arcane-falls-63252.herokuapp.com/">
@@ -147,7 +240,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://arcane-falls-63252.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/employeeTracker.JPG" />
                   </div>
@@ -165,8 +258,8 @@
                 <div>
                   <p class="mb-4">
                     Using HTML5, CSS3 and JavaScript I created an online gradient background generator for designers. 
-                    Now, designers can use my application to generate any background they want and use the dynamic code 
-                    generated by the application in their projects to include the desired gradient background.
+                    Now, designers can use my application to generate any background they want and use the code generated 
+                    dynamically by the application in their projects to include the desired gradient background.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://damirbey.github.io/Gradient-Background-Generator/">
@@ -194,8 +287,8 @@
                 <h3 class="project-wrapper__text-title">RoboFriends ReactJS Web Application</h3>
                 <div>
                   <p class="mb-4">
-                    RoboFriends is the web application built using the ReactJS, HTML, CSS and Tachyons npm package which displays information about different robots in Card UI.
-                    The application has a feature that allows users to search for a specific robot and update the list of robots dynamically on page. 
+                    RoboFriends is a web application built using the HTML5, CSS3, JavaScript, ReactJS + React Hooks, Redux, and Tachyons npm package which displays information about different robots in Card UI. 
+                    The application has a feature that allows users to search for a specific robot and update the list of robots dynamically on the page. 
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://damirbey.github.io/RoboFriends/">
